@@ -46,6 +46,30 @@ With each session, users go head-to-head with an AI opponent over a randomly sel
 
 ---
 
+## 🧭 How the Debate Unfolds: Stage by Stage
+
+Debate.AI isn’t just back-and-forth chatter — it follows a structured, multi-phase format to simulate real debate dynamics and ensure depth in every session:
+
+### **Stage 1: Opening Statements**
+Each opponent presents their perspective based on their assigned stance.  
+The moderator invites both the human and AI opponent to share their initial arguments.  
+If a speaker provides vague or meaningless input, the moderator flags it and prompts them to try again.
+
+### **Stage 2: Moderator's Inquiry**
+The moderator poses targeted questions to each opponent, addressing any missing logic, weak points, or vague claims from their opening statements.  
+Up to 5 questions per opponent are allowed.  
+Each speaker then responds with clarification, elaboration, or defense.
+
+### **Stage 3: Cross-Examination**
+Now it’s the opponents' turn to challenge each other.  
+Each asks up to 3 questions aimed at poking holes in the other's logic or strengthening their own case.  
+They respond in kind, defending their positions under pressure.
+
+> 📸 _Placeholder for debate timeline or flowchart_  
+> `![Debate Flow](./images/debate_stages.jpg)`
+
+---
+
 ## 🛠️ Technologies Used (Tech Stack)
 
 The project combines several cutting-edge GenAI technologies and tools:
@@ -94,16 +118,12 @@ Arguments are scored using Gemini-generated structured output — from “Very B
 
 This project demonstrates **9 GenAI capabilities** required by the capstone:
 
-✅ Structured Output / JSON Mode  
-✅ Few-Shot Prompting  
-✅ Document Understanding  
-✅ Audio Understanding  
-✅ Function Calling  
-✅ Agents (Role-Based Interaction via LangGraph)  
+✅ Structured Output
+✅ Grounding
+✅ Agents
 ✅ Embeddings  
-✅ Retrieval-Augmented Generation (RAG)  
-✅ Vector Store / Vector Database  
-✅ Gen AI Evaluation  
+✅ Retrieval-Augmented Generation
+✅ Vector Database  
 
 ---
 
