@@ -118,11 +118,11 @@ Arguments are scored using Gemini-generated structured output — from “Very B
 
 This project demonstrates **9 GenAI capabilities** required by the capstone:
 
-✅ Structured Output
-✅ Grounding
-✅ Agents
+✅ Structured Output  
+✅ Grounding  
+✅ Agents  
 ✅ Embeddings  
-✅ Retrieval-Augmented Generation
+✅ Retrieval-Augmented Generation  
 ✅ Vector Database  
 
 ---
