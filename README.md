@@ -109,8 +109,24 @@ Arguments are scored using Gemini-generated structured output — from “Very B
 5. **Response Scoring:** Each human response is evaluated by Gemini using a prompt-based rubric and scored automatically.
 6. **Audio Output:** Responses are spoken using AI-generated voices to simulate a real debate experience.
 
-> 📸 _Placeholder for system architecture diagram_  
-> `![System Architecture](./images/system_architecture.jpg)`
+```mermaid
+graph LR
+    A[Notebook Interface] --> B[LangGraph<br/>(State Manager)]
+    B --> C[DebateState<br/>(TypedDict)]
+    B --> D[Debate Nodes<br/>(Moderator, Opponent, Human)]
+
+    D --> E[Gemini LLM<br/>(langchain_google_genai)]
+    D --> F[TTS System<br/>(Kokoro ONNX)]
+    D --> G[Google Search Tool]
+
+    G --> H[Corpus Builder<br/>(topic_search + RAG)]
+    H --> I[Gemini Embeddings]
+    I --> J[ChromaDB<br/>(Vector Store)]
+    J --> E
+
+    D --> K[Evaluation Engine<br/>(Structured Enum Output)]
+    K --> A
+```
 
 ---
 
@@ -161,9 +177,6 @@ We hope it inspires others to explore intelligent simulation tools for communica
 ## 🔗 Competition Link
 
 This project was created as part of the [Gen AI Intensive Course Capstone 2025Q1](https://www.kaggle.com/competitions/gen-ai-intensive-course-capstone-2025q1).
-
-> 📸 _Placeholder for CTA or Try it now_  
-> `![Try Debate.AI](./images/try_now.jpg)`
 
 ---
 
