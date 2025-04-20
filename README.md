@@ -109,25 +109,6 @@ Arguments are scored using Gemini-generated structured output — from “Very B
 5. **Response Scoring:** Each human response is evaluated by Gemini using a prompt-based rubric and scored automatically.
 6. **Audio Output:** Responses are spoken using AI-generated voices to simulate a real debate experience.
 
-```mermaid
-graph LR
-    A[Notebook Interface] --> B[LangGraph<br/>(State Manager)]
-    B --> C[DebateState<br/>(TypedDict)]
-    B --> D[Debate Nodes<br/>(Moderator, Opponent, Human)]
-
-    D --> E[Gemini LLM<br/>(langchain_google_genai)]
-    D --> F[TTS System<br/>(Kokoro ONNX)]
-    D --> G[Google Search Tool]
-
-    G --> H[Corpus Builder<br/>(topic_search + RAG)]
-    H --> I[Gemini Embeddings]
-    I --> J[ChromaDB<br/>(Vector Store)]
-    J --> E
-
-    D --> K[Evaluation Engine<br/>(Structured Enum Output)]
-    K --> A
-```
-
 ---
 
 ## ✅ GenAI Capabilities Demonstrated
