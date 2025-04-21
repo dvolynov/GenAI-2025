@@ -41,8 +41,8 @@ Debate.AI is a fully autonomous debate simulator that brings together:
 
 With each session, users go head-to-head with an AI opponent over a randomly selected topic. The debate is moderated by another AI that provides context, manages the flow, and evaluates responses.
 
-> 📸 _Placeholder for live session screenshot_  
-> `![Debate Session](./images/debate_sample.jpg)`
+![telegram-cloud-document-2-5201849086499645735](https://github.com/user-attachments/assets/94e71deb-8e69-48cc-9ff8-7473e398c0ca)
+
 
 ---
 
@@ -64,9 +64,6 @@ Each speaker then responds with clarification, elaboration, or defense.
 Now it’s the opponents' turn to challenge each other.  
 Each asks up to 3 questions aimed at poking holes in the other's logic or strengthening their own case.  
 They respond in kind, defending their positions under pressure.
-
-> 📸 _Placeholder for debate timeline or flowchart_  
-> `![Debate Flow](./images/debate_stages.jpg)`
 
 ---
 
